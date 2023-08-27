@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font: inherit;
        font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	text-shadow: 0px 1.3px 0px #fff;
 	vertical-align: baseline; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -56,6 +56,11 @@ text-align: justify;
 padding-left: 15px;
 padding-right: 15px;
 }
+
+/*.innerHTML {
+ font-weight: ligther;
+}*/
+
 
 .custom-btn {
   width: 130px;
