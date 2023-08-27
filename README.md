@@ -1,2 +1,2 @@
 # rotinamatinalpwa
-Um simples exemplo pwa de rotina matinal para ajudar a se preparar para o dia.
+Um simples exemplo de pwa de rotina matinal para ajudar a se preparar para o dia.
