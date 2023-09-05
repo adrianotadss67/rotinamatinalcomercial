@@ -1,5 +1,5 @@
 # rotinamatinalcomercial
-Um simples exemplo pwa de rotina matinal para ajudar a se preparar para o dia.
+Um simples exemplo de progressive web app (pwa) de rotina matinal para ajudar a se preparar para o dia.
 
 # teste aqui:
 https://adrianotadss67.github.io/rotinamatinalcomercial/
