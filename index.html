@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('DOMContentLoaded', function() {
+          navigator.serviceWorker.register('sw.js')
+            .then(function(registration) {
+              console.log('Service Worker registrado com sucesso:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('Falha ao registrar o Service Worker:', error);
+            });
+        });
+      }
+    </script>
   <title>Rotina Matinal 6-7</title>
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="css/style.css">
@@ -13,7 +26,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Rotina Matinal">
   <meta name="msapplication-TileImage" content="images/hello-icon-192.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileColor" content="#FFFFFF"> 
 </head>
 <body class="fullscreen">
   <div class="container">
@@ -96,7 +109,6 @@
     <span class="center"></span>
     <span class="right"></span>
   </div>
-  <script src="js/main.js"></script>
 </body>
 </html>
 
