@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rotina Matinal 6-7</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/hello-icon-192.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rotina Matinal">
+  <meta name="msapplication-TileImage" content="images/hello-icon-192.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body class="fullscreen">
+  <div class="container">
+    <h1 class="title">Rotina Matinal</h1>
+  </div>
+  <div class="bottom-gradient">
+    <span class="left"></span>
+    <span class="center"></span>
+    <span class="right"></span>
+  </div>
+
+  <!--<input type="checkbox" id="repelente" name="repelente">
+  <label for="repelente">Aplicar repelente contra mosquitos</label><br>-->
+  <input type="checkbox" id="agua" name="agua">
+  <label for="agua">Beber água</label><br>
+<div class="bottom-gradient">
+    <span class="left"></span>
+    <span class="center"></span>
+    <span class="right"></span>
+  </div>
+  <input type="checkbox" id="oracao" name="oracao">
+  <label for="oracao">Fazer uma pausa para reflexão</label><br>
+   <div class="bottom-gradient">
+    <span class="left"></span>
+    <span class="center"></span>
+    <span class="right"></span>
+  </div>
+  <p>Você tem uma opção de café da manhã saudável?</p>
+  <button class="custom-btn button" id="cafe-yes">Sim</button>
+  <button class="custom-btn button" id="cafe-no">Não</button>
+  <p id="cafe-resposta"></p>
+<div class="bottom-gradient">
+    <span class="left"></span>
+    <span class="center"></span>
+    <span class="right"></span>
+  </div>
+  <p>Todos os seus itens essenciais estão organizados?</p>
+  <button class="custom-btn button" id="essenciais-yes">Sim</button> 
+  <button class="custom-btn button" id="essenciais-no">Não</button>
+  <p id="essenciais-resposta"></p>
+<div class="bottom-gradient">
+    <span class="left"></span>
+    <span class="center"></span>
+    <span class="right"></span>
+  </div>
+  <script>
+    const hora = new Date().getHours();
+    const data = new Date();
+    //const dia = data.getDate();
+
+    if (hora < 6 ) {
+      document.write("Você pode fazer café, se quiser.<br>");
+      document.write("Você tem tempo para um banho.<br>");
+    }
+
+    if (hora >= 6 && hora < 6.5) {
+      document.write("Você talvez tenha tempo para um banho rápido, seja eficiente.<br>");
+    }
+
+    document.getElementById("cafe-yes").addEventListener("click", function() {
+      document.getElementById("cafe-resposta").innerHTML = "Ótimo! Aproveite o seu café da manhã.";
+    });
+
+    document.getElementById("cafe-no").addEventListener("click", function() {
+      document.getElementById("cafe-resposta").innerHTML = "Mais tarde vá ao mercado e adiquira os ingredientes para um café da manhã saudável.";
+    });
+
+    document.getElementById("essenciais-yes").addEventListener("click", function() {
+      document.getElementById("essenciais-resposta").innerHTML = "Você está bem preparado!";
+    });
+
+    document.getElementById("essenciais-no").addEventListener("click", function() {
+      document.getElementById("essenciais-resposta").innerHTML = "Tire um momento para organizar seus itens essenciais.";
+    });
+
+  </script>
+
+  <div class="bottom-gradient">
+    <span class="left"></span>
+    <span class="center"></span>
+    <span class="right"></span>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
