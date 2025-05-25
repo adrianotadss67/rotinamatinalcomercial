@@ -1,9 +1,7 @@
-const CACHE_NAME = "matinal-pwa";
+const CACHE_NAME = "web-desktop-cache-v1";
 const urlsToCache = [
   "./",
-  "./index.html",
-  "./css/style.css",
-  "./js/main.js"  
+  "./index.html"
 ];
 
 self.addEventListener("install", function(event) {
