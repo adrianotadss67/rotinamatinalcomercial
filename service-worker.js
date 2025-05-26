@@ -1,4 +1,4 @@
-const CACHE_NAME = "web-desktop-cache-v1";
+const CACHE_NAME = "rotina-matinal";
 const urlsToCache = [
   "./",
   "./index.html"
